@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <header>
+    </header>
+   <div class="wrapper">
+       <div class="img-backgroup">
+           <img src="img/chic-03.jpg" alt="fondo">
+       </div>
+    
+        <!-- *******************************  FORMULARIO DE ACCESO ****************************************************************** -->
+        <div class="container-login" data-id="login">
+            <h2 class="text-center">Bienvenida</h2><br>
+            <form class="form-login">
+                <button class="fb">Iniciar sesión con facebook</button><br>
+                <button class="google">Iniciar sesión con google</button><br><br>
+                <spam>----------------Or--------------</spam> <br><br>
+                <div class="input-group">
+                    <label for="login-email">Correo Electrónico</label><br>
+                    <input type="email" id="login-email" name="email" placeholder="Correo Electrónico" class="input-field">
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Contraseña</label><br>
+                    <input type="password" id="login-password" name="password" placeholder="Contraseña" class="input-field">
+                </div>
+                <div class="input-btn">
+                    <input type="submit" class="input-btn" value="Ingresar">
+                </div>
+                <a href="#" data-target="forgot" class="forgotPassword">Olvidaste tu Contraseña?</a>
+            </form>
+        </div>
+        <!-- *************************************************************************************************************************** -->
+        <!-- *******************************   FORMULARIO PARA REGISTRARSE   *********************************************************** -->
+        <div class="container-register" data-id="signup">
+            <h2 class="text-center">Ingrese los Datos Solicitados</h2><br>
+            <form class="form-register">
+                <div class="photoProfile">
+                    <label for='photo_upload' style="display:block">Foto de perfil</label>
+                    <button type="button" class="btn btn-dark form-control" onclick="document.getElementById('photo_upload').click()" id="photo_btn">Seleccionar imagen</button>
+                    <input type="file" name="photo" id="photo_upload" accept="image/*" style="display:none;" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-name">Nombre Completo</label><br>
+                    <input type="text" id="signup-name" name="name" placeholder="Nombre Completo" class="input-field">
+                </div>
+                    
+                <div class="input-group">
+                    <label for="signup-email">Correo Electrónico</label><br>
+                    <input type="email" id="signup-email" name="email" placeholder="Correo Electrónico" class="input-field">
+                </div>
+                    
+                <div class="input-group">
+                    <label for="signup-password">Contraseña</label><br>
+                    <input type="password" id="signup-password" name="password" placeholder="Contraseña" class="input-field">
+                </div>
+                    
+                <div class="input-btn">
+                    <input type="submit" class="input-btn" value="Registrarse">
+                </div>
+            </form>
+        </div> 
+        <!-- *********************************************************************************************************************** -->
+    </div> 
+<script src="app.js"></script>  
+</body>
+</html>
